@@ -1,0 +1,13 @@
+doctype html
+html
+    head
+        include mixins/notice.pug
+        title
+    body
+        h1=pageTitle
+
+        block content
+            each item in notices
+                +notices(item)
+
+        <button id="upload" onclick="location.href='upload'">작성</button>

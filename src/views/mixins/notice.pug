@@ -1,0 +1,6 @@
+mixin notices(item) 
+    a(href=`/notice/${item.id}`)=item.title 
+    ul
+        li
+            span=item.content
+        br
